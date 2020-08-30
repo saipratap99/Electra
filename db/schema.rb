@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_30_082103) do
+ActiveRecord::Schema.define(version: 2020_08_30_082751) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "community_answers", force: :cascade do |t|
+    t.string "answer"
+    t.integer "community_question_id"
+    t.boolean "hide_details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "community_questions", force: :cascade do |t|
     t.string "ques"
