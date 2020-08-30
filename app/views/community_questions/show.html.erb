@@ -1,2 +1,8 @@
 <h1>CommunityQuestions#show</h1>
 <p>Find me in app/views/community_questions/show.html.erb</p>
+<h4><%= @question.ques %></h4>
+<br>
+<h5>Answers:</h5>
+<% @question.community_answers.each do |ans| %>
+  <p><%= ans.answer %></p>
+<% end %>
