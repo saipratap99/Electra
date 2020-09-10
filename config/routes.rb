@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: "home#index"
   get "/community", to: "community_questions#index", as: :community
   resources :community_questions, except: [:index]
