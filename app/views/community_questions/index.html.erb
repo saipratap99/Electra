@@ -1,7 +1,15 @@
-<h1>CommunityQuestions#index</h1>
-<p>Find me in app/views/community_questions/index.html.erb</p>
-<ul>
-  <% @questions.each do |question| %>
-    <li><%= link_to "#{question.ques}", question %></li>
-  <% end %>
-</ul>
+<div class="search-block">
+  <h1 class="welcome">Welcome to</h1>
+  <h1 class="student">Students Community</h1>
+  <p class="search">
+    <input type="search" name="search" id="search" placeholder="Search..."/>
+  </p>
+</div>
+<div id="create_question">
+  <button>
+    <i class="fa fa-plus-circle" aria-hidden="true"></i> Ask Question
+  </button>
+</div>
+<div id="allq">
+  <%= render partial: "questions" %>
+</div>
