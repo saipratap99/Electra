@@ -6,9 +6,9 @@
   </p>
 </div>
 <div id="create_question">
-  <button>
+  <%= link_to new_community_question_path do %>
     <i class="fa fa-plus-circle" aria-hidden="true"></i> Ask Question
-  </button>
+  <% end %>
 </div>
 <div id="allq">
   <%= render partial: "questions" %>

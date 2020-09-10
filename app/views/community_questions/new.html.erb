@@ -1,5 +1,21 @@
-<%= form_with model: @question, local: true do |f| %>
-  <%= f.text_field :ques %>
-  <%= f.text_field :description %>
-  <%= f.submit "Submit" %>
-<% end %>
+<div class="new-question">
+  <%= link_to community_path do %>
+    <i class="fa fa-angle-left" aria-hidden="true"></i> Community
+  <% end %>
+  <%= form_with model: @question, local: true do |f| %>
+    <div class="title">
+      <p>Title</p>
+      <div class="title-input"><%= f.text_field :ques, placeholder: "Title of the question" %></div>
+    </div>
+    <div class="description">
+      <p>Description</p>
+      <div class="description-input">
+        <%= f.text_area :description , placeholder: "Describe the question, so that others can understand and give the answer", size: '50x10' %>
+        <p class="add-img">
+          <%= f.file_field :picture, placeholder: "Add image" %>
+        </p>
+      </div>
+    </div>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

@@ -40,7 +40,7 @@
   text-align: center;
   padding: 15px;
 }
-#create_question button {
+#create_question a {
   padding: 8px;
   font-size: 25px;
   border: 1px solid transparent;
@@ -68,9 +68,40 @@
   width: 80%;
   text-align: left;
   font-size: 21px;
+  color: rgb(31, 31, 31);
 }
 .q_author {
   margin-top: 5px;
   padding-top: 5px;
   font-size: 16px;
+  color: grey;
+}
+
+// new question
+
+.new-question {
+  padding-top: 15px;
+  width: 70%;
+  margin: auto;
+}
+
+.description p {
+  margin: 10px 0;
+}
+
+.title p {
+  margin: 10px 0;
+}
+
+.description-input textarea,
+.title-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.title-input input[type="text"] {
+  border-radius: 5px;
 }

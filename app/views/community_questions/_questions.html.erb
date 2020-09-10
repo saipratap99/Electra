@@ -1,20 +1,22 @@
 <% @questions.each do |question| %>
-  <div class="question">
-    <div class="q_details">
-      <p><%= question.ques %></p>
-      <p class="q_author">
-        Asked by Pratap on <span id="q_time">16 th July 2020</span>
-      </p>
+  <%= link_to question do %>
+    <div class="question">
+      <div class="q_details">
+        <p><%= question.ques %></p>
+        <p class="q_author">
+          Asked by Pratap on <span id="q_time">16 th July 2020</span>
+        </p>
+      </div>
+      <div class="like_comment">
+        <button>
+          <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+          <span>1</span>
+        </button>
+        <button>
+          <i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+          <span><%= question.community_answers.count %></span>
+        </button>
+      </div>
     </div>
-    <div class="like_comment">
-      <button>
-        <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
-        <span>1</span>
-      </button>
-      <button>
-        <i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
-        <span><%= question.community_answers.count %></span>
-      </button>
-    </div>
-  </div>
+  <% end %>
 <% end %>
