@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "home#index"
   get "/community", to: "community_questions#index", as: :community
   resources :community_questions, except: [:index]
   resources :community_answers, except: [:index, :new, :show, :edit]
