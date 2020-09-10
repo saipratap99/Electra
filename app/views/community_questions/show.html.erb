@@ -4,6 +4,11 @@
 <h3><%= @question.ques %></h3>
 <p><%= @question.description %></p>
 <h2>Answers:</h2>
+<h4>Your answer:</h3>
+<%= form_with url: community_answers_path(id: @question.id), local: true do |f| %>
+  <%= f.text_field :answer %>
+  <%= f.submit "Submit" %>
+<% end %>
 <% @question.community_answers.each do |ans| %>
   <p><%= ans.answer %></p>
 <% end %>
