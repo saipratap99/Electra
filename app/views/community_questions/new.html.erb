@@ -1,0 +1,5 @@
+<%= form_with model: @question, local: true do |f| %>
+  <%= f.text_field :ques %>
+  <%= f.text_field :description %>
+  <%= f.submit "Submit" %>
+<% end %>
