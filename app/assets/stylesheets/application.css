@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Karla", sans-serif;
+  padding: 1px;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}

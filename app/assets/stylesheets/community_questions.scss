@@ -1,3 +1,77 @@
 // Place all the styles related to the Community_questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.search-block {
+  background-image: url(ele2.jpg);
+  width: 100%;
+  height: 250px;
+  padding-top: 15px;
+}
+.welcome,
+.student {
+  text-align: center;
+  font-size: 45px;
+  margin: auto;
+  color: white;
+  text-shadow: 2px 2px 25px black;
+}
+
+.student {
+  font-weight: bold;
+  color: cornsilk;
+  font-size: 55px;
+}
+.search {
+  padding: 15px;
+  text-align: center;
+}
+#search {
+  width: 60%;
+  border: 0;
+  outline: purple;
+  font-size: 25px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgb(190, 188, 188);
+}
+
+#create_question {
+  text-align: center;
+  padding: 15px;
+}
+#create_question button {
+  padding: 8px;
+  font-size: 25px;
+  border: 1px solid transparent;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+}
+
+#allq {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.question {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px grey;
+  margin-top: 5px;
+}
+.q_details {
+  width: 80%;
+  text-align: left;
+  font-size: 21px;
+}
+.q_author {
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 16px;
+}
